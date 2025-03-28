@@ -1,4 +1,4 @@
-/* ✅ Navbar Layout - Smooth Moving Wave Effect */
+/* ✅ Smooth Moving Wave Effect */
 @keyframes waveGradient {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
@@ -114,6 +114,7 @@
   font-size: 24px;
   cursor: pointer;
   display: none;
+  color: #b56576;
 }
 
 /* ✅ Fully Responsive Navbar */
@@ -143,7 +144,6 @@
     position: absolute;
     top: 15px;
     right: 20px;
-    color: #b56576;
   }
 
   .nav-links {
@@ -152,9 +152,13 @@
     text-align: center;
     gap: 10px;
     width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   }
 
-  .nav-links.show {
+  .nav-links.flex {
     display: flex;
   }
 }
