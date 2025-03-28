@@ -105,27 +105,18 @@
     color: #333;
 }
 
+/* Floating Animation */
 @keyframes floating {
     0% { transform: translateY(0px); }
     50% { transform: translateY(-8px); }
     100% { transform: translateY(0px); }
 }
 
+/* Sparkle Animation */
 @keyframes sparkle {
     0% { opacity: 0; transform: scale(1); }
     50% { opacity: 1; transform: scale(1.5); }
     100% { opacity: 0; transform: scale(1); }
-}
-
-.sparkle {
-    position: absolute;
-    top: 10%;
-    left: 20%;
-    width: 10px;
-    height: 10px;
-    background: radial-gradient(white, transparent);
-    border-radius: 50%;
-    animation: sparkle 1.5s infinite alternate;
 }
 
 /* Responsive Design */
@@ -142,11 +133,14 @@
 }
 
 @media (max-width: 768px) {
+    .jewellery-container {
+        padding: 10px;
+    }
     .jewellery-card {
-        width: 200px;
+        width: 180px;
     }
     .jewellery-title {
-        font-size: 24px;
+        font-size: 22px;
     }
     .jewellery-track {
         animation: scroll 10s linear infinite;
@@ -154,85 +148,16 @@
 }
 
 @media (max-width: 480px) {
+    .jewellery-container {
+        padding: 5px;
+    }
     .jewellery-card {
-        width: 180px;
+        width: 150px;
     }
     .jewellery-title {
-        font-size: 20px;
+        font-size: 18px;
     }
     .jewellery-track {
         animation: scroll 8s linear infinite;
     }
 }
-
-
-
-
-/* Jewellery Container */
-.jewellery-container {
-    text-align: center;
-    padding: 20px;
-    background: #f9f9f9;
-}
-
-/* Scrollable Jewellery Track */
-.jewellery-scroll {
-    overflow-x: auto;
-    white-space: nowrap;
-    padding: 10px 0;
-}
-
-.jewellery-track {
-    display: flex;
-    gap: 15px;
-    padding: 10px;
-}
-
-/* Jewellery Card */
-.jewellery-card {
-    position: relative;
-    width: 220px;
-    background: white;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-}
-
-/* Mouse Move - Parallax Effect */
-.jewellery-card:hover {
-    transform: scale(1.05);
-}
-
-.jewellery-image {
-    width: 100%;
-    transition: transform 0.3s ease-in-out;
-}
-
-.jewellery-card:hover .jewellery-image {
-    transform: translateY(-5px);
-}
-
-/* Sparkle Animation */
-@keyframes sparkle {
-    0% { opacity: 0; transform: scale(1); }
-    50% { opacity: 1; transform: scale(1.5); }
-    100% { opacity: 0; transform: scale(1); }
-}
-
-/* Sparkle Elements */
-.sparkle {
-    position: absolute;
-    width: 12px;
-    height: 12px;
-    background: radial-gradient(white, transparent);
-    border-radius: 50%;
-    animation: sparkle 1.5s infinite alternate;
-    opacity: 0;
-}
-
-/* Multiple Sparkles at Different Positions */
-.sparkle-1 { top: 15%; left: 20%; animation-delay: 0.2s; }
-.sparkle-2 { top: 40%; left: 80%; animation-delay: 0.5s; }
-.sparkle-3 { top: 70%; left: 30%; animation-delay: 0.7s; }
-.sparkle-4 { top: 85%; left: 50%; animation-delay: 1s; }
