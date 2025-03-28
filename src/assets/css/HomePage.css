@@ -25,11 +25,11 @@
     opacity: 1;
 }
 
-/* Banner Image with Proper Fit */
+/* Banner Image with Blur + Shadow */
 .banner-image {
     width: 100%;
-    height: 100%;
-    object-fit: contain; /* Ensures full image is visible without cutting */
+    height: 90%;
+    object-fit: cover;
     border-radius: 0;
     filter: brightness(95%) drop-shadow(0px 8px 15px rgba(0, 0, 0, 0.4)); /* Shadow Effect */
     transition: filter 0.5s ease-in-out;
@@ -114,10 +114,18 @@
         height: 60vh;
     }
 
+    .banner-slide {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     .banner-image {
-        object-fit: contain; /* Prevents image from getting cut */
-        height: auto;
-        max-height: 100%;
+        width: 100%;
+        height: 100%;
+        object-fit: contain; /* Image पूर्ण दाखवण्यासाठी */
     }
 
     .banner-button {
@@ -130,6 +138,7 @@
         height: 10px;
     }
 }
+
 
 /* Smooth Parallax Banner */
 .parallax-banner {
