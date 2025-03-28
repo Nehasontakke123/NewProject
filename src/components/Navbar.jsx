@@ -102,7 +102,6 @@
 
 
 
-
 import React, { useState } from "react";
 import "../assets/css/Navbar.css";
 import { FaSearch, FaShoppingCart, FaUser, FaGem, FaRing, FaGift, FaBars, FaTimes } from "react-icons/fa";
@@ -137,8 +136,8 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* ✅ 2nd Row: Main Navigation Links with Icons (Mobile Responsive) */}
-      <div className={`nav-links ${isOpen ? "flex" : "hidden"} md:flex`}>
+      {/* ✅ 2nd Row: Navigation Links */}
+      <div className={`nav-links ${isOpen ? "flex" : "hidden"} flex-col absolute top-16 left-0 w-full bg-white shadow-md md:static md:flex md:flex-row md:bg-transparent md:shadow-none`}>
         <span><GiNecklace /> All Jewellery</span>
         <span><FaGem /> Gold</span>
         <span><BsDiamond /> Diamond</span>
