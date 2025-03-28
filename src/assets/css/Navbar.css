@@ -130,10 +130,17 @@
 }
 
 /* ✅ Responsive Design */
+/* ✅ Updated Responsive Design */
 @media (max-width: 768px) {
   .nav-top {
     flex-direction: column;
     align-items: center;
+    text-align: center;
+  }
+
+  .nav-logo {
+    margin-left: 0; /* ✅ Logo center मध्ये येण्यासाठी */
+    text-align: center;
   }
 
   .nav-search {
@@ -146,6 +153,7 @@
     justify-content: center;
     gap: 10px;
     font-size: 14px;
+    text-align: center;
   }
 
   .nav-icons {
